@@ -8,8 +8,7 @@ public interface EmployeeService {
     EmployeeEntity saveEmployee(EmployeeEntity employeeEntity);
 
     EmployeeEntity updateEmployee(EmployeeEntity employeeEntity);
-    
+
     List<EmployeeEntity> getAllEmp();
 
-//    EmployeeEntity getByName(String employeeName);
 }

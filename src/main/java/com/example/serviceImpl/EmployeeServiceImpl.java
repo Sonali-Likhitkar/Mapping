@@ -12,8 +12,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;
 
-    public EmployeeServiceImpl(EmployeeRepository employeeRepository){
-        this. employeeRepository= employeeRepository;
+    public EmployeeServiceImpl(EmployeeRepository employeeRepository) {
+        this.employeeRepository = employeeRepository;
     }
 
     @Override
@@ -26,21 +26,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         EmployeeEntity employee = new EmployeeEntity();
 
-     employee.setEmpId(employeeEntity.getEmpId());
-     employee.setEmployeeName(employeeEntity.getEmployeeName());
-     employee.setDepartment(employeeEntity.getDepartment());
-     employee.setProject(employeeEntity.getProject());
+        employee.setEmpId(employeeEntity.getEmpId());
+        employee.setEmployeeName(employeeEntity.getEmployeeName());
+        employee.setDepartment(employeeEntity.getDepartment());
+        employee.setProject(employeeEntity.getProject());
 
         return employeeRepository.save(employee);
     }
 
     @Override
     public List<EmployeeEntity> getAllEmp() {
-        return  employeeRepository.findAll();
+        return employeeRepository.findAll();
     }
 
-//    @Override
-//    public EmployeeEntity getByName(String employeeName) {
-//        return employeeRepository.getByName(employeeName);
-//    }
 }

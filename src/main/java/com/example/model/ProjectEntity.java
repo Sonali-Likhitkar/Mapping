@@ -16,9 +16,7 @@ public class ProjectEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int projecctId;
-    private String  projectName;
+    private int projectId;
+    private String projectName;
 
-//    @OneToOne(mappedBy = "ProjectEntity")
-//    private EmployeeEntity employee;
 }

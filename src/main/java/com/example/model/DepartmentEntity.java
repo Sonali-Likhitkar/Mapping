@@ -15,9 +15,7 @@ import lombok.Setter;
 public class DepartmentEntity {
 
     @Id
-    @GeneratedValue(strategy =GenerationType.AUTO )
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int departmentId;
     private String departmentName;
-//    @OneToOne(mappedBy = "DepartmentEntity")
-//    private EmployeeEntity employee;
 }

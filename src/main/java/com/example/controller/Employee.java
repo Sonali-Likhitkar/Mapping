@@ -11,32 +11,27 @@ import java.util.List;
 public class Employee {
 
     private EmployeeService employeeService;
-    public Employee (EmployeeService employeeService){
-        this.employeeService= employeeService;
+
+    public Employee(EmployeeService employeeService) {
+        this.employeeService = employeeService;
     }
 
 
     @PostMapping("/saveEmployee")
-    public EmployeeEntity  create (@RequestBody EmployeeEntity employeeEntity){
+    public EmployeeEntity create(@RequestBody EmployeeEntity employeeEntity) {
         return employeeService.saveEmployee(employeeEntity);
     }
 
 
     @PutMapping("/UpdateEmployee/{empId}")
-    public EmployeeEntity  update(@PathVariable Long empId ,  @RequestBody EmployeeEntity employeeEntity){
+    public EmployeeEntity update(@PathVariable Long empId, @RequestBody EmployeeEntity employeeEntity) {
         return employeeService.updateEmployee(employeeEntity);
     }
 
 
     @GetMapping("/getAll")
-    public List<EmployeeEntity> getAll(){
-        return  employeeService.getAllEmp();
+    public List<EmployeeEntity> getAll() {
+        return employeeService.getAllEmp();
     }
 
-//    @GetMapping("getByName/{employeeName}")
-//    public EmployeeEntity getByName(@PathVariable String employeeName){
-//        return employeeService.getByName(employeeName);
-    }
-
-
-
+}
