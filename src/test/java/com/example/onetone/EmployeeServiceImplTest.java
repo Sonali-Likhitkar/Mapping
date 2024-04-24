@@ -41,10 +41,4 @@ public class EmployeeServiceImplTest {
         employeeService.saveEmployee(employeeEntity);
         verify(employeeRepository).save(employeeEntity);
     }
-
-//    public void updateEmployee(){
-//        EmployeeEntity employee = new EmployeeEntity();
-//
-//        employeeService.updateEmployee(employee);
-//    }
 }

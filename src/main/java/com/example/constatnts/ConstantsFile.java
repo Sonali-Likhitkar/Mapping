@@ -1,6 +1,6 @@
 package com.example.constatnts;
 
-public  final class ConstantsFile {
+public final class ConstantsFile {
 
     public static final String EMPTY_DATA = " You are passing Empty Fields ";
 
