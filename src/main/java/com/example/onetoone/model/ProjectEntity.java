@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.onetoone.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -8,14 +8,15 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Table(name = "DepartmentEntity")
+@Table(name = "ProjectEntity")
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class DepartmentEntity {
+public class ProjectEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int departmentId;
-    private String departmentName;
+    private int projectId;
+    private String projectName;
+
 }

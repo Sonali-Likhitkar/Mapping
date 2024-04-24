@@ -1,6 +1,6 @@
-package com.example.repository;
+package com.example.onetoone.repository;
 
-import com.example.model.EmployeeEntity;
+import com.example.onetoone.model.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.onetoone.model;
 
 
 import jakarta.persistence.*;

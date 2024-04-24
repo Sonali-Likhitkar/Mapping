@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.onetoone.controller;
 
-import com.example.model.EmployeeEntity;
-import com.example.service.EmployeeService;
+import com.example.onetoone.model.EmployeeEntity;
+import com.example.onetoone.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -23,9 +23,9 @@ public class Employee {
     }
 
 
-    @PutMapping("/UpdateEmployee/{empId}")
-    public EmployeeEntity update(@PathVariable Long empId, @RequestBody EmployeeEntity employeeEntity) {
-        return employeeService.updateEmployee(employeeEntity);
+    @PutMapping("/UpdateEmployee/{id}")
+    public EmployeeEntity update(@PathVariable Long id, @RequestBody EmployeeEntity employeeEntity) {
+        return employeeService.updateEmployee(id, employeeEntity);
     }
 
 
